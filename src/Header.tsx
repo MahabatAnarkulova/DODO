@@ -16,7 +16,7 @@ const Header: FC<IHeaderProps> = (props) => {
   return (
     <div>
       {props.tabs.map(el => {
-        return <a onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {handleClick(el.name)}} href='#'>{el.name}</a>
+        return <a onClick={() => {handleClick(el.name)}} href='#'>{el.name}</a>
       })}
       <br />
       <br />
